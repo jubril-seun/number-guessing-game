@@ -55,28 +55,26 @@ function playRound(computerNumber, playerOneNumber, playerTwoNumber) {
     if(guessResult(computerNumber, playerOneNumber) === 0 && guessResult(computerNumber, playerTwoNumber) === 0){
         playerOneScore++;
         playerTwoScore++;
-        console.log("It's a tie. Both guesses were exact!")
+        console.log("It's a tie. Both guesses were exact")
     } else if(guessResult(computerNumber, playerOneNumber) === 0){
         playerOneScore++;
-        console.log("Player One wins. Player One's guess was exact!")
+        console.log("Player One wins")
     } else if(guessResult(computerNumber, playerTwoNumber) === 0){
         playerTwoScore++;
-        console.log("Player Two wins. Player Two's guess was exact!")
+        console.log("Player Two wins")
     } else if(guessResult(computerNumber, playerOneNumber) === 1 && guessResult(computerNumber, playerTwoNumber) === 1){
         playerOneScore++;
         playerTwoScore++;
-        console.log("It's a tie. Both guesses were off by 1")
+        console.log("It's a tie. Both guesses were off by 1.")
     } else if(guessResult(computerNumber, playerOneNumber) === 1){
         playerOneScore++;
-        console.log("Player One wins. Guess was off by 1")
+        console.log("Player One wins")
     } else if(guessResult(computerNumber, playerTwoNumber) === 1){
         playerTwoScore++;
-        console.log("Player Two wins. Guess was off by 1")
+        console.log("Player Two wins")
     } else {
-        console.log("No one wins. Both guesses were off by 2 or more.")
+        console.log("No one wins. Both guesses were off by 2 or more")
     }
-
-    console.log("The random number was " + computerNumber + ". Player One's Number was " + playerOneNumber + ". Player Two's number was " + playerTwoNumber);
 }
 
 /* console.log(playRound(5,playerOneGuess(), playerTwoGuess()));
